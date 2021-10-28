@@ -1,0 +1,101 @@
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Calculadora</title>
+
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="stylesheet" href="/reset.css">
+    <link rel="stylesheet" href="/index.css">
+    <link rel="stylesheet" href="/Calculadora/CSS/calculator.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navigation">
+            <h1>Projetos para praticar HTML, CSS e JS</h1>
+            <ul class="pages">
+                <li class="page"><a href="/index.html">Home</a></li>
+                <li class="page"><a href="/calculadora.html">Calculadora</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container">
+        <div class="project-name">
+            <h1>Calculadora Simples</h1>
+        </div>
+        <section class="calculator">
+            <div class="screen">
+                <div class="lines">
+                    <p id="operationsDisplay"></p>
+                </div>
+                <div class="lines">
+                    <p id="resultDisplay">0</p>
+                </div>
+            </div>
+            <div class="buttons">
+                <div class="row">
+                    <button id="percentage" class="operation">%</button>
+                    <button id="clearResults" class="clear">CE</button>
+                    <button id="clearAll" class="clear">C</button>
+                    <button id="delete" class="clear">DEL</button>
+                </div>
+                <div class="row">
+                    <button id="oneDividedBy" class="operation aloneOperation">1/X</button>
+                    <button id="squared" class="operation">^</button>
+                    <button id="squareRoot" class="operation aloneOperation">²√</button>
+                    <button id="dividedBy" class="operation">÷</button>
+                </div>
+                <div class="row">
+                    <button id="seven" class="number displayable">7</button>
+                    <button id="eight" class="number displayable">8</button>
+                    <button id="nine" class="number displayable">9</button>
+                    <button id="times" class="operation">x</button>
+                </div>
+                <div class="row">
+                    <button id="four" class="number displayable">4</button>
+                    <button id="five" class="number displayable">5</button>
+                    <button id="six" class="number displayable">6</button>
+                    <button id="minus" class="operation">-</button>
+                </div>
+                <div class="row">
+                    <button id="one" class="number displayable">1</button>
+                    <button id="two" class="number displayable">2</button>
+                    <button id="three" class="number displayable">3</button>
+                    <button id="plus" class="operation">+</button>
+                </div>
+                <div class="row">
+                    <button id="positiveNegative" class="displayable">+/- </button>
+                    <button id="zero" class="number displayable">0</button>
+                    <button id="comma" class="number displayable">.</button>
+                    <button id="equal" class="operation">=</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="socials">
+            <a href="https://github.com/HenriqueGomesDeAndrade"><img
+                    src="https://miro.medium.com/max/1125/1*dDNpLKu_oTLzStsDTnkJ-g.png" alt="github" class="social"
+                    id="github"></a>
+            <img src="https://media-exp1.licdn.com/dms/image/C4E03AQFRN64R4-owAQ/profile-displayphoto-shrink_800_800/0/1626913933788?e=1637193600&v=beta&t=O2uwqwffi2WZEn-yMBBqKYlHAPcJyRRF5yPYJjaORMQ"
+                alt="eu" id="photo">
+            <a href="https://www.linkedin.com/in/henrique-gomes-de-andrade/"><img
+                    src="https://abrhsp.org.br/wp-content/uploads/2018/05/2000px-LinkedIn_Logo.svg_.png" alt="Linkedin"
+                    class="social" id="linkedin"></a>
+        </div>
+
+        <p>&copy; Feito por Henrique Gomes</p>
+    </footer>
+
+    <script src="/Calculadora/JS/main.js"></script>
+    <script src="/Calculadora/JS/exibirNaTelaOperacoes.js"></script>
+    <script src="/Calculadora/JS/exibirNaTelaResultados.js"></script>
+    <script src="/Calculadora/JS/realizaCalculo.js"></script>
+    <script src="/Calculadora/JS/limparTela.js"></script>
+    <script src="/Calculadora/JS/cssChanges.js"></script>
+</body>
+
+</html>
